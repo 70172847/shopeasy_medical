@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediCare Store - Cart & Checkout</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">⚕️ MediCare Store</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Medical Supplies</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <button id="theme-toggle">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <h2>Your Order Summary</h2>
+      <table id="cart-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Unit Price</th>
+            <th>Qty</th>
+            <th>Subtotal</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cart-body">
+          <!-- Cart items loaded dynamically -->
+        </tbody>
+      </table>
+      <h3 class="total-display">Grand Total: $<span id="cart-total">0</span></h3>
+    </section>
+
+    <section class="checkout-section">
+      <h2>Shipping & Prescription Details</h2>
+      <form id="checkout-form" novalidate>
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" placeholder="e.g. Dr. Sarah Ahmed" required minlength="3">
+          <small class="error-msg"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" placeholder="sarah@example.com" required>
+          <small class="error-msg"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Contact Number:</label>
+          <input type="tel" id="phone" placeholder="03001234567" required pattern="[0-9]{10,11}">
+          <small class="error-msg"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="city">Delivery City:</label>
+          <select id="city" required>
+            <option value="">Choose City</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+          </select>
+          <small class="error-msg"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Full Delivery Address:</label>
+          <textarea id="address" placeholder="Street, Sector/Area, House No." required minlength="10"></textarea>
+          <small class="error-msg"></small>
+        </div>
+
+        <button type="submit" id="submit-btn">Confirm & Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 MediCare Direct. Quality Healthcare Solutions.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>

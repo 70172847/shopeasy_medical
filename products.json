@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Digital Stethoscope",
+    "price": 180,
+    "category": "diagnostic",
+    "rating": 4.8,
+    "inStock": true,
+    "image": "images/stethoscope.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Automatic Blood Pressure Monitor",
+    "price": 65,
+    "category": "monitoring",
+    "rating": 4.6,
+    "inStock": true,
+    "image": "images/bp_monitor.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Fingertip Pulse Oximeter",
+    "price": 30,
+    "category": "monitoring",
+    "rating": 4.5,
+    "inStock": true,
+    "image": "images/oximeter.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Infrared Forehead Thermometer",
+    "price": 45,
+    "category": "diagnostic",
+    "rating": 4.4,
+    "inStock": true,
+    "image": "images/thermometer.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Surgical Face Masks (Box of 50)",
+    "price": 15,
+    "category": "supplies",
+    "rating": 4.7,
+    "inStock": true,
+    "image": "images/masks.jpg"
+  },
+  {
+    "id": 6,
+    "name": "First Aid Medical Kit",
+    "price": 40,
+    "category": "supplies",
+    "rating": 4.9,
+    "inStock": true,
+    "image": "images/first_aid.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Blood Glucose Meter Kit",
+    "price": 55,
+    "category": "monitoring",
+    "rating": 4.3,
+    "inStock": true,
+    "image": "images/glucometer.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Medical Grade Nebulizer",
+    "price": 75,
+    "category": "care",
+    "rating": 4.5,
+    "inStock": true,
+    "image": "images/nebulizer.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Orthopedic Knee Brace",
+    "price": 35,
+    "category": "care",
+    "rating": 4.2,
+    "inStock": true,
+    "image": "images/knee_brace.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Nitrile Examination Gloves (100 pack)",
+    "price": 22,
+    "category": "supplies",
+    "rating": 4.8,
+    "inStock": true,
+    "image": "images/gloves.jpg"
+  }
+]
